@@ -1,2 +1,2 @@
-# harold.githib.io
+# harold.github.io
 BYUi online repository
