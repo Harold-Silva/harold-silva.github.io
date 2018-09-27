@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+<meta charset="utf-8">
+<title>Selections Example</title>
+	<script type="text/javascript">
+	function choosefoot () {
+		var weather = document.getElementById('weather').value;
+		var foot;
+		
+		if (weather == "hot"){
+			foot = "Sandals";
+		}
+		else if (weather == "rain"){
+			foot = "Galoshes";
+		}
+		else if (weather == "snow"){
+			foot = "Boots";
+		}
+		else {
+			foot = "Shoes";
+		}
+		document.getElementById('output').innerHTML = "You must use for the " + weather + ": " + foot;
+	}
+	</script> 
+</head>
+<body>
+<h2>Selections of Foot Wear</h2>
+<p>Please type, how is the weather today</p>
+<input type="text" id="weather" value="Weather">
+<button type="button" onclick="choosefoot()">What Foot</button>
+<br/>
+<br/>
+<div id="output"></div>
+</body>
+</html>
