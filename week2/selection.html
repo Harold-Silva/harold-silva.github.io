@@ -4,6 +4,39 @@
 <meta charset="utf-8">
 <title>Selections Example</title>
 	<script type="text/javascript">
+	/*
+	---- Differents forms of selection ----
+
+			If … (Use when: a true choice exits and the false choise does no exist)
+
+			Template	
+			If (condition) {
+				Statements;
+			}	
+			
+			Example
+			if (balance > 500) {
+			    var interest = balance * 0.03;
+			    balance += interest;
+			}	
+			document.getElementById('outputDiv').innerHTML = balance;
+	
+	
+			if … else if … else … (Use when: More than two choices exist. 
+			Each choise is based on different variables or uses an operator other than equals (==)
+			
+			Template
+			If (condition) {
+				Statements;
+			}
+			Else if (condition) {
+			Statements;
+			}
+			Else {
+			Statements;
+			}
+	
+	*/
 	function choosefoot () {
 		var weather = document.getElementById('weather').value;
 		var foot;

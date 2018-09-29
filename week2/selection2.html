@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+<meta charset="utf-8">
+<title>Switch section</title>
+		<script type="text/javascript">
+		/* switch (Use when: More than two choises exist. Each choise is base on the same variable and uses equals (==). 
+		Comparison values are integer or string.
+		
+		Template:
+		Switch (variable) {
+		case constValue1: statements; break;
+		case constValue2: statements; break;
+		Default:  statements; break;
+		}
+		*/
+		
+		
+	function weekDay(){
+		var day = document.getElementById('whatDay').value;
+		switch (day) {
+			case "Monday":
+				document.write ("Go to work")
+				break;
+			case "Tuesday":
+				document.write ("Go to work")
+				break;
+			case "Wednesday":
+				document.write ("Go to work")
+				break;
+			case "Thursday":
+				document.write ("Go to work")
+				break;
+			case "Friday":
+				document.write ("Go to work")
+				break;
+			default:
+				document.write ("You can rest")
+				break;
+		}
+		}
+	</script>
+</head>
+<body>
+Whay day is today? <input type="text" id="whatDay"></input>
+<button type="button" onclick="weekDay()">Click</button>
+</body>
+</html>
